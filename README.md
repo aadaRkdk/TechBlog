@@ -1,2 +1,2 @@
 # TechBlog
-This repository is created to learn, understand and do full-stack project.
+This repository is created to learn, understand and create full-stack project.
