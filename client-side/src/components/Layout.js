@@ -1,13 +1,11 @@
-//.src/components/Layout.js
-import Navbar from "./Navbar";
+// src/components/Layout.js
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Navbar />
-      <main className="container mx-auto px-4 py-8">{children}</main>
-    </>
+    <div className="container mx-auto p-4">
+      {children}
+    </div>
   );
-};
+}
 
 export default Layout;
