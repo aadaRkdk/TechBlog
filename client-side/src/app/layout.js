@@ -1,5 +1,3 @@
-// src/app/layout.js
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -15,9 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <style>{`
+          body {
+            margin: 0;
+            padding: 0;
+          }
+        `}</style>
+      </head>
       <body className={inter.className}>
-        <Layout />
         <Navbar />
+        <Layout />
         {children}
       </body>
     </html>

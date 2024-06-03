@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const LoginPage = () => {
   return (
     <main>
@@ -48,9 +50,9 @@ const LoginPage = () => {
           <div className="container mx-auto max-w-md p-4">
             <p className="mb-4">
               Don't have an account?{" "}
-              <a href="#" className="text-blue-500">
+              <Link href="/register" className="text-blue-500">
                 Register
-              </a>
+              </Link>
               .
             </p>
           </div>

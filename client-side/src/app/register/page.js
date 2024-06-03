@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const RegisterPage = () => {
   return (
     <main>
@@ -63,9 +65,9 @@ const RegisterPage = () => {
 
             <p className="mb-4">
               By creating an account you agree to our{" "}
-              <a href="#" className="text-blue-500">
+              <Link href="#" className="text-blue-500">
                 Terms & Privacy
-              </a>
+              </Link>
               .
             </p>
             <button
@@ -79,9 +81,9 @@ const RegisterPage = () => {
           <div className="container mx-auto max-w-md p-4">
             <p className="mb-4">
               Already have an account?{" "}
-              <a href="#" className="text-blue-500">
+              <Link href="/login" className="text-blue-500">
                 Sign in
-              </a>
+              </Link>
               .
             </p>
           </div>
