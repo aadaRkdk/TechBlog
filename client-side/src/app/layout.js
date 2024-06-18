@@ -1,30 +1,23 @@
+import React from "react";
 import { Inter } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { metadata } from "./metadata";  // Import metadata from the new file
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Layout from "@/components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "TechBlog",
-  description: "TechBlog ...",
-};
-
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <head>
-        <style>{`
-          body {
-            margin: 0;
-            padding: 0;
-          }
-        `}</style>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
       </head>
-      <body className={inter.className}>
-        <Navbar />
-        <Layout />
-        {children}
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

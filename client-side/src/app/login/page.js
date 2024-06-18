@@ -1,10 +1,10 @@
 import Link from "next/link";
+import Layout from "../layout";
 
 const LoginPage = () => {
   return (
-    <main>
+    <Layout>
       <div className="p-4 text-2xl"></div>
-
       <div className="flex min-h-screen flex-col items-center justify-between p-2">
         <form>
           <div className="container mx-auto max-w-md p-4">
@@ -58,7 +58,7 @@ const LoginPage = () => {
           </div>
         </form>
       </div>
-    </main>
+    </Layout>
   );
 };
 
