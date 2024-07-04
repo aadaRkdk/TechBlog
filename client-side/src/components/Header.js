@@ -1,11 +1,7 @@
-// src/components/Header.js
-
-//use client 
-'use client'
+// /client-side/src/components/Header.js
 
 import Link from "next/link";
 import SearchBar from "./SearchBar";
-
 
 const Header = () => {
   return (
@@ -16,7 +12,7 @@ const Header = () => {
         </div>
         <div className="flex items-center space-x-6">
           <ul className="flex space-x-6 text-white">
-          <SearchBar />
+            {/* <SearchBar />  I don't have code right now, I will have in future.*/}
             <li>
               <Link href="/about">About</Link>
             </li>

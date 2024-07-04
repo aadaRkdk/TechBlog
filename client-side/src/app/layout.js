@@ -1,18 +1,14 @@
+//  /client-side/src/layout.js
 import React from "react";
-import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { metadata } from "./metadata";  // Import metadata from the new file
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Layout({ children }) {
+export default function Layout({ children, title = "TechBlog" }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en">
       <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>{title}</title>
       </head>
       <body>
         <Header />
