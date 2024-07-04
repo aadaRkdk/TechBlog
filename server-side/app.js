@@ -22,10 +22,6 @@ mongoose
     console.error("Error connecting to MongoDB:", error);
   });
 
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
-
 // Blog routes
 app.post("/blogs", async (req, res) => {
   try {
